@@ -9,8 +9,8 @@
 int changedir(char **p, CHDIRECT *predirect)
 {
 	char cd[] = "cd";
-	char tilde[] = "~";
-	char dash[] = "-";
+	char firulete[] = "~";
+	char barra[] = "-";
 	char *jeje;
 	char *temp;
 
@@ -18,7 +18,7 @@ int changedir(char **p, CHDIRECT *predirect)
 	{
 
 		predirect->cde = 1;
-		if (p[1] == NULL ||  _strcmp(p[1], tilde) == 0)
+		if (p[1] == NULL ||  _strcmp(p[1], firulete) == 0)
 		{
 
 			jeje = _getenv("HOME");
@@ -28,7 +28,7 @@ int changedir(char **p, CHDIRECT *predirect)
 
 
 		}
-		else if (_strcmp(p[1], dash) == 0)
+		else if (_strcmp(p[1], barra) == 0)
 		{
 			temp = _strdup(_getenv("PWD"));
 			chdir(predirect->jeje);
