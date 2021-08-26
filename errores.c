@@ -5,8 +5,7 @@
  * @c: user command
  * @p: pointer to name of the program
  * @i: counter, indicating number of user commands during life of program
- *
- *Return: Nothing
+ *Return: 0
  */
 void errmessage(char **c, char *p, int i)
 {

@@ -8,6 +8,7 @@
 int str_len(char *jeje)
 {
 	int a;
+
 	a = 0;
 
 	while (jeje[a] != '\0')

@@ -2,7 +2,7 @@
 
 /**
  * _atoi - string a integer
- * @s: string to convert
+ * @jeje: string to convert
  * Return: sum
  */
 int _atoi(char *jeje)

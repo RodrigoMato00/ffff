@@ -33,7 +33,8 @@ int checkexit(char **token)
  * @fc: malloced string path/to/file from PATH function
  * @predirect: malloc string of previous directory
  */
-void __exit(int errnum, char **p, char *getline, PDIRECT *head, char *fc, char *predirect)
+void __exit(int errnum, char **p, char *getline, PDIRECT *head, char *fc,
+	    char *predirect)
 {
 	PDIRECT *tmp;
 

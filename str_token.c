@@ -1,16 +1,15 @@
 #include "JP-RM-LM.h"
 
 /**
- *str_token - tokenizes a string
+ *_str_token - tokenizes a string
  *@jeje: string a tokenizar
  *@d: deliminator a sstring
  *Return: token or 0
  */
 char *_str_token(char *jeje, char *d)
 {
-	static int jejepoint;
+	static int jejepoint, large;
 	int a = 0, b = 0;
-	static int large;
 	static char *cpy;
 
 	if (jeje != NULL)
@@ -21,8 +20,7 @@ char *_str_token(char *jeje, char *d)
 			for (b = 0; d[b] != '\0'; b++)
 			{
 				if (jeje[a] == d[b])
-					jeje[a] = '\0';
-			}
+					jeje[a] = '\0'; }
 			a++;
 		}
 		a = 0;
@@ -34,8 +32,7 @@ char *_str_token(char *jeje, char *d)
 		if (jeje[a] != '\0')
 		{
 			cpy = jeje;
-			return (jeje + a);
-		}
+			return (jeje + a); }
 		return (NULL);
 	}
 	else

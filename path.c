@@ -32,5 +32,6 @@ PDIRECT *linkedpath(void)
 			temp = temp2;
 		}
 	}
+	free(path);
 	return (head);
 }

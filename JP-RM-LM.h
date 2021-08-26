@@ -13,13 +13,13 @@
 
 /**
  *struct direc - structure for the implementation of Linkedlist (PATH)
- *@a: directory path
+ *@jeje: directory path
  *@next: pointer a next node
  */
 typedef struct direc
 {
-	char * jeje;
-	struct direc * next;
+	char *jeje;
+	struct direc *next;
 } PDIRECT;
 
 /**
@@ -48,7 +48,8 @@ void _itoa(int a, char *c);
 PDIRECT *linkedpath(void);
 int _atoi(char *jeje);
 int checkexit(char **token);
-void __exit(int errnum, char **p, char *getline, PDIRECT *head, char *fc, char *predirect);
+void __exit(int errnum, char **p, char *getline, PDIRECT *head, char *fc,
+	    char *predirect);
 void errmessage(char **c, char *p, int i);
 void CDerrmessage(char **c, char *p, int i);
 extern char **environ;

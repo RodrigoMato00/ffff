@@ -2,8 +2,8 @@
 
 /**
  * _itoa - int to ascii
- * @i: number
- * @t: string
+ * @a: number
+ * @c: string
  */
 void _itoa(int a, char *c)
 {
